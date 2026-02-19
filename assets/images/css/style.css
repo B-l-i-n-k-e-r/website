@@ -1,0 +1,49 @@
+/* GLOBAL STYLES */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* HERO SECTION (HOME PAGE) */
+.hero-section { 
+    padding: 100px 0; 
+    /* Path logic: go up one folder to 'assets', then into 'images' */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/bg.jpeg'); 
+    background-size: cover; 
+    background-position: center;
+    color: white; 
+    height: 90vh; 
+    display: flex; 
+    align-items: center; 
+    text-align: center;
+}
+
+/* CARDS & BUTTONS */
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
+}
